@@ -16,6 +16,8 @@ const server = http.createServer((req, res) => {
       if(value1 <= 0 && value2>0){
         res.statusCode=404;
         res.end("Not Found");
+      }else{
+        res.statusCode=200;
       }
       
     });
